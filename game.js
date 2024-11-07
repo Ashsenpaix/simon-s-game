@@ -70,7 +70,7 @@ function nextSequence() {
 
     level++;
 
-    $("level-title").text("level "+level);
+    $("#level-title").text("level "+level);
 
     var randomNumber = Math.floor(Math.random()*4);
 
@@ -79,7 +79,7 @@ function nextSequence() {
    gamePattern.push(randomChosenColour);
 
 
-   $("#"+nextSequence()).fadeIn(100).fadeOut(100).fadeIn(100);
+   $("#"+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 
    playSound(randomChosenColour);
 
